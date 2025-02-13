@@ -21,7 +21,7 @@ export const fetchTemplates = createAsyncThunk(
   "gift/fetchTemplates",
   async () => {
     const response = await giftApi.getTemplates();
-    return response.data.data;
+    return response.data;
   }
 );
 
@@ -29,7 +29,7 @@ export const createGift = createAsyncThunk(
   "gift/createGift",
   async (giftData: CreateGiftDto) => {
     const response = await giftApi.createGift(giftData);
-    return response.data.data;
+    return response.data;
   }
 );
 
@@ -37,7 +37,7 @@ export const fetchGift = createAsyncThunk(
   "gift/fetchGift",
   async ({ id, password }: { id: string; password?: string }) => {
     const response = await giftApi.getGift(id, password);
-    return response.data.data;
+    return response.data;
   }
 );
 
