@@ -11,14 +11,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { Gift } from "@/types/gift";
 
-interface PageProps {
-  params: {
-    id: string;
-  };
+type Props = {
+  params: { id: string };
   searchParams: { [key: string]: string | string[] | undefined };
-}
+};
 
-export default function ViewGift({ params, searchParams }: PageProps) {
+export default function ViewGift({ params, searchParams }: Props) {
   const { getGift } = useGift();
   const [gift, setGift] = useState<Gift | null>(null);
   const [loading, setLoading] = useState(true);

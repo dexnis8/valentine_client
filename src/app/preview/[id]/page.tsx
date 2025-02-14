@@ -9,14 +9,12 @@ import Image from "next/image";
 import { Gift } from "@/types/gift";
 import Modal from "@/components/ui/Modal";
 
-interface PageProps {
-  params: {
-    id: string;
-  };
+type Props = {
+  params: { id: string };
   searchParams: { [key: string]: string | string[] | undefined };
-}
+};
 
-export default function GiftPreview({ params, searchParams }: PageProps) {
+export default function GiftPreview({ params, searchParams }: Props) {
   const { getGift } = useGift();
   const [gift, setGift] = useState<Gift | null>(null);
   const [loading, setLoading] = useState(true);
