@@ -145,7 +145,7 @@ export default function GiftPreview({ params, searchParams }: Props) {
             applications!
           </p>
           <a
-            href="https://deluxcodingschool.com"
+            href="https://deluxcodingschool.ng"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-valentine-gold text-valentine-red px-6 py-3 rounded-full font-semibold hover:bg-white transition-colors duration-300"
