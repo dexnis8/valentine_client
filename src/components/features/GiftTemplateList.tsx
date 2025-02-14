@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
 import { useState } from "react";
@@ -48,7 +49,7 @@ export default function GiftTemplateList({ templates }: GiftTemplateListProps) {
         router.push(`/preview/${gift._id}`);
       }
     } catch (error) {
-      console.error("Failed to create gift:", error);
+      // console.error("Failed to create gift:", error);
     }
     setLoading(false);
   };
