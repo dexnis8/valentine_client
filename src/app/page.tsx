@@ -2,6 +2,7 @@
 "use client";
 
 import Link from "next/link";
+import Footer from "@/components/ui/Footer";
 // import Image from "next/image";
 
 export default function Home() {
@@ -64,6 +65,8 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <Footer />
     </main>
   );
 }
