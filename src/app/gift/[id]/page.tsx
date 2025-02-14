@@ -261,7 +261,7 @@ export default function ViewGift({ params, searchParams }: Props) {
             Join Delux Coding School and learn how to build amazing applications
             like this one!
           </p>
-          <div className="space-x-4">
+          <div className="space-x-4 space-y-4">
             <Link
               href="/create"
               className="inline-block bg-valentine-gold text-valentine-red px-6 py-3 rounded-full font-semibold hover:bg-white transition-colors duration-300"
@@ -269,7 +269,7 @@ export default function ViewGift({ params, searchParams }: Props) {
               Create a Gift
             </Link>
             <a
-              href="https://deluxcodingschool.com"
+              href="https://deluxcodingschool.ng"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-white text-valentine-red px-6 py-3 rounded-full font-semibold hover:bg-valentine-light-pink transition-colors duration-300"
